@@ -3,12 +3,12 @@ entries:
   myapp-chart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-29T02:43:54.65752742Z"
+    created: "2025-07-29T03:33:55.402638402Z"
     description: A Helm chart with image and replicas as variables
-    digest: 5604019453c3d868836992e2c36638f222dd0c5bbf89482a4d50be4ecd87721b
+    digest: 66176979fc0a15562f9457d18ea033ba62321f585b8b1864f1e469138ed5a799
     name: myapp-chart
     type: application
     urls:
     - https://antiwater19.github.io/helm-repo/myapp-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-29T02:43:54.657011475Z"
+generated: "2025-07-29T03:33:55.402173738Z"
