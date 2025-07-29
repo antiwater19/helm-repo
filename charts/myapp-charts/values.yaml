@@ -1,0 +1,28 @@
+db:
+  repository: public.ecr.aws/v3g6g4v7/antiwater19-lab2
+  tag: db-v1
+  replicas: 1
+
+redis:
+  repository: public.ecr.aws/v3g6g4v7/antiwater19-lab2
+  tag: redis-v1
+  replicas: 1
+
+app:
+  repository: public.ecr.aws/v3g6g4v7/antiwater19-lab2
+  tag: app-v1
+  replicas: 1
+
+nginx:
+  repository: public.ecr.aws/v3g6g4v7/antiwater19-lab2
+  tag: nginx-v1
+  replicas: 1
+
+
+ingress:
+  healthCheckPath: /healthz
+  host: app.antiwater19.co.kr
+  certificateArn: arn:aws:acm:ap-northeast-1:556683426101:certificate/f9a5c9fa-b1b0-4638-96c1-beb4a3f1f11a
+  group:
+    name: shared-alb
+    order: "10"
