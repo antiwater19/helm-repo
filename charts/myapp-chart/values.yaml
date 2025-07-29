@@ -10,7 +10,7 @@ redis:
 
 app:
   repository: public.ecr.aws/v3g6g4v7/antiwater19-lab2
-  tag: app-v1
+  tag: version-33
   replicas: 2
 
 nginx:
